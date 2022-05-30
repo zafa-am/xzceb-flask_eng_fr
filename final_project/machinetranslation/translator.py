@@ -58,6 +58,6 @@ def frenchToEnglish(text):
         return translation['translations'][0]['translation']
     return ""
 
-# print(englishToFrench(None))
+#print(englishToFrench(None))
 
-# print(frenchToEnglish('Quoi De Neuf'))
+#print(frenchToEnglish('Quoi De Neuf'))

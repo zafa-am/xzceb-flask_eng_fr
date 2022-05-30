@@ -11,8 +11,10 @@ from dotenv import load_dotenv
 load_dotenv() # Loads the local environment file as environment
 
 # The following two commands fetch the environment variables
-apikey = os.environ['apikey']
-url = os.environ['url']
+# apikey = os.environ['apikey']
+apikey = 'ynYSaj_wbb0LHKSOFtrDSGBuH7IrLsqmgbM5lAt7D0Qh'
+# url = os.environ['url']
+url = 'https://api.us-south.language-translator.watson.cloud.ibm.com/instances/960d829a-c4af-4e7b-9a4b-53684791b4fd'
 
 # Initiate instance of language translator
 authenticator = IAMAuthenticator(apikey)
@@ -58,6 +60,4 @@ def frenchToEnglish(text):
         return translation['translations'][0]['translation']
     return ""
 
-#print(englishToFrench(None))
 
-#print(frenchToEnglish('Quoi De Neuf'))
